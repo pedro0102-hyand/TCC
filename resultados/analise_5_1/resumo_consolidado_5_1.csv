@@ -1,0 +1,36 @@
+﻿Questão,Variável,Categoria,Frequência,Percentual (%)
+Q1,Relação com TI,Estudante.,30,58.82
+Q1,Relação com TI,Profissional.,20,39.22
+Q1,Relação com TI,Entusiasta.,1,1.96
+Q2,Escolaridade,Ensino Superior cursando.,34,66.67
+Q2,Escolaridade,Ensino Superior completo.,10,19.61
+Q2,Escolaridade,Pós-graduação / Especialização.,4,7.84
+Q2,Escolaridade,Mestrado.,3,5.88
+Q3,Conhecimento em programação,Intermediário.,24,47.06
+Q3,Conhecimento em programação,Avançado.,15,29.41
+Q3,Conhecimento em programação,Básico.,10,19.61
+Q3,Conhecimento em programação,Iniciante.,2,3.92
+Q4,Frequência de desenvolvimento,Algumas vezes por semana.,21,41.18
+Q4,Frequência de desenvolvimento,Diariamente.,18,35.29
+Q4,Frequência de desenvolvimento,Raramente.,7,13.73
+Q4,Frequência de desenvolvimento,Algumas vezes por mês.,4,7.84
+Q4,Frequência de desenvolvimento,Nunca.,1,1.96
+Q5,Tempo de estudo e/ou trabalho com programação,De 1 a 4 anos.,24,47.06
+Q5,Tempo de estudo e/ou trabalho com programação,Mais de 4 anos.,20,39.22
+Q5,Tempo de estudo e/ou trabalho com programação,Menos de 1 ano.,6,11.76
+Q5,Tempo de estudo e/ou trabalho com programação,Não tenho experiência.,1,1.96
+Q6,Área ou função principal,Desenvolvimento Web.,33,64.71
+Q6,Área ou função principal,Dados.,18,35.29
+Q6,Área ou função principal,Inteligência Artificial & Aprendizado de Máquina.,10,19.61
+Q6,Área ou função principal,P&D (Pesquisa e Desenvolvimento).,8,15.69
+Q6,Área ou função principal,Quality Assurance (Garantia de Qualidade).,5,9.8
+Q6,Área ou função principal,Desenvolvimento Mobile.,2,3.92
+Q6,Área ou função principal,Robótica,1,1.96
+Q6,Área ou função principal,Sem area,1,1.96
+Q6,Área ou função principal,Desenvolvimento de Jogos Digitais,1,1.96
+Q6,Área ou função principal,DevOps/SRE,1,1.96
+Q6,Área ou função principal,Primeiro semestre computação,1,1.96
+Q6,Área ou função principal,Dev Backend,1,1.96
+Q6,Área ou função principal,Suporte,1,1.96
+Q6,Área ou função principal,Desenvolvimento FullStack,1,1.96
+Q6,Área ou função principal,Segurança,1,1.96
