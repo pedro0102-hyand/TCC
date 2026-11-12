@@ -65,6 +65,26 @@ def salvar_grafico_frequencia(tabela, titulo, nome_arquivo, horizontal=False):
     plt.savefig(PASTA_RESULTADOS / nome_arquivo, dpi=300, bbox_inches="tight")
     plt.close()
 
+def salvar_grafico_pizza(tabela, titulo, nome_arquivo):
+    if tabela.empty:
+        return
+    frequencias = tabela["Frequência"]
+    legenda = [f"{categoria} (n={int(valor)})" for categoria, valor in frequencias.items()]
+    figura, eixo = plt.subplots(figsize=(9, 6))
+    fatias, _, _ = eixo.pie(
+        frequencias,
+        autopct="%1.1f%%",
+        startangle=90,
+        counterclock=False,
+        pctdistance=0.72,
+    )
+    eixo.legend(fatias, legenda, title="Categorias", loc="center left", bbox_to_anchor=(1, 0.5))
+    eixo.set_title(titulo)
+    eixo.axis("equal")
+    figura.tight_layout()
+    figura.savefig(PASTA_RESULTADOS / nome_arquivo, dpi=300, bbox_inches="tight")
+    plt.close(figura)
+
 print("\n" + "=" * 72)
 print("ANÁLISE CONSOLIDADA — SEÇÃO 5.1")
 print("CARACTERIZAÇÃO DOS PARTICIPANTES")
@@ -102,6 +122,8 @@ for codigo in ["Q1", "Q2", "Q3", "Q4", "Q5"]:
     print(tabela.to_string())
     tabela.to_csv(PASTA_RESULTADOS / f"{codigo.lower()}_frequencias.csv", encoding="utf-8-sig")
     salvar_grafico_frequencia(tabela, f"{codigo} — {NOMES[codigo]}", f"{codigo.lower()}_distribuicao.png")
+    if codigo in ["Q1", "Q2"]:
+        salvar_grafico_pizza(tabela, f"{codigo} — {NOMES[codigo]}", f"{codigo.lower()}_pizza.png")
 
 print("\n" + "-" * 72)
 print("Q6 — ÁREAS E FUNÇÕES (MÚLTIPLA SELEÇÃO)")
@@ -204,4 +226,5 @@ print("- CSVs com frequências de Q1 a Q6")
 print("- CSVs do cruzamento Q3 x Q5")
 print("- resumo_consolidado_5_1.csv")
 print("- gráficos individuais de Q1 a Q6")
+print("- gráficos de pizza de escolaridade (Q2) e perfil dos participantes (Q1)")
 print("- gráfico do cruzamento Q3 x Q5")
