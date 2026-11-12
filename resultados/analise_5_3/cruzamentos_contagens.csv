@@ -1,0 +1,341 @@
+﻿variavel_perfil,categoria_perfil,variavel_interacao,categoria_interacao,n
+Q2_Escolaridade,Ensino Superior completo.,Q7_Frequencia_IA,Diariamente.,5
+Q2_Escolaridade,Ensino Superior completo.,Q7_Frequencia_IA,Frequentemente.,4
+Q2_Escolaridade,Ensino Superior completo.,Q7_Frequencia_IA,Raramente.,0
+Q2_Escolaridade,Ensino Superior completo.,Q7_Frequencia_IA,Às vezes.,1
+Q2_Escolaridade,Ensino Superior cursando.,Q7_Frequencia_IA,Diariamente.,14
+Q2_Escolaridade,Ensino Superior cursando.,Q7_Frequencia_IA,Frequentemente.,17
+Q2_Escolaridade,Ensino Superior cursando.,Q7_Frequencia_IA,Raramente.,1
+Q2_Escolaridade,Ensino Superior cursando.,Q7_Frequencia_IA,Às vezes.,2
+Q2_Escolaridade,Mestrado.,Q7_Frequencia_IA,Diariamente.,1
+Q2_Escolaridade,Mestrado.,Q7_Frequencia_IA,Frequentemente.,1
+Q2_Escolaridade,Mestrado.,Q7_Frequencia_IA,Raramente.,1
+Q2_Escolaridade,Mestrado.,Q7_Frequencia_IA,Às vezes.,0
+Q2_Escolaridade,Pós-graduação / Especialização.,Q7_Frequencia_IA,Diariamente.,2
+Q2_Escolaridade,Pós-graduação / Especialização.,Q7_Frequencia_IA,Frequentemente.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q7_Frequencia_IA,Raramente.,0
+Q2_Escolaridade,Pós-graduação / Especialização.,Q7_Frequencia_IA,Às vezes.,1
+Q2_Escolaridade,Ensino Superior completo.,Q14_Aceita_Sem_Compreender,Frequentemente.,1
+Q2_Escolaridade,Ensino Superior completo.,Q14_Aceita_Sem_Compreender,Nunca.,3
+Q2_Escolaridade,Ensino Superior completo.,Q14_Aceita_Sem_Compreender,Raramente.,6
+Q2_Escolaridade,Ensino Superior completo.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q2_Escolaridade,Ensino Superior completo.,Q14_Aceita_Sem_Compreender,Às vezes.,0
+Q2_Escolaridade,Ensino Superior cursando.,Q14_Aceita_Sem_Compreender,Frequentemente.,4
+Q2_Escolaridade,Ensino Superior cursando.,Q14_Aceita_Sem_Compreender,Nunca.,5
+Q2_Escolaridade,Ensino Superior cursando.,Q14_Aceita_Sem_Compreender,Raramente.,12
+Q2_Escolaridade,Ensino Superior cursando.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q2_Escolaridade,Ensino Superior cursando.,Q14_Aceita_Sem_Compreender,Às vezes.,13
+Q2_Escolaridade,Mestrado.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q2_Escolaridade,Mestrado.,Q14_Aceita_Sem_Compreender,Nunca.,2
+Q2_Escolaridade,Mestrado.,Q14_Aceita_Sem_Compreender,Raramente.,1
+Q2_Escolaridade,Mestrado.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q2_Escolaridade,Mestrado.,Q14_Aceita_Sem_Compreender,Às vezes.,0
+Q2_Escolaridade,Pós-graduação / Especialização.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q2_Escolaridade,Pós-graduação / Especialização.,Q14_Aceita_Sem_Compreender,Nunca.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q14_Aceita_Sem_Compreender,Raramente.,2
+Q2_Escolaridade,Pós-graduação / Especialização.,Q14_Aceita_Sem_Compreender,Sempre.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q14_Aceita_Sem_Compreender,Às vezes.,0
+Q2_Escolaridade,Ensino Superior completo.,Q15_Tenta_Sozinho,Frequentemente.,3
+Q2_Escolaridade,Ensino Superior completo.,Q15_Tenta_Sozinho,Nunca.,3
+Q2_Escolaridade,Ensino Superior completo.,Q15_Tenta_Sozinho,Raramente.,2
+Q2_Escolaridade,Ensino Superior completo.,Q15_Tenta_Sozinho,Sempre.,2
+Q2_Escolaridade,Ensino Superior completo.,Q15_Tenta_Sozinho,Às vezes.,0
+Q2_Escolaridade,Ensino Superior cursando.,Q15_Tenta_Sozinho,Frequentemente.,15
+Q2_Escolaridade,Ensino Superior cursando.,Q15_Tenta_Sozinho,Nunca.,1
+Q2_Escolaridade,Ensino Superior cursando.,Q15_Tenta_Sozinho,Raramente.,6
+Q2_Escolaridade,Ensino Superior cursando.,Q15_Tenta_Sozinho,Sempre.,1
+Q2_Escolaridade,Ensino Superior cursando.,Q15_Tenta_Sozinho,Às vezes.,11
+Q2_Escolaridade,Mestrado.,Q15_Tenta_Sozinho,Frequentemente.,1
+Q2_Escolaridade,Mestrado.,Q15_Tenta_Sozinho,Nunca.,0
+Q2_Escolaridade,Mestrado.,Q15_Tenta_Sozinho,Raramente.,1
+Q2_Escolaridade,Mestrado.,Q15_Tenta_Sozinho,Sempre.,0
+Q2_Escolaridade,Mestrado.,Q15_Tenta_Sozinho,Às vezes.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q15_Tenta_Sozinho,Frequentemente.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q15_Tenta_Sozinho,Nunca.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q15_Tenta_Sozinho,Raramente.,2
+Q2_Escolaridade,Pós-graduação / Especialização.,Q15_Tenta_Sozinho,Sempre.,0
+Q2_Escolaridade,Pós-graduação / Especialização.,Q15_Tenta_Sozinho,Às vezes.,0
+Q2_Escolaridade,Ensino Superior completo.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",0
+Q2_Escolaridade,Ensino Superior completo.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,1
+Q2_Escolaridade,Ensino Superior completo.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",1
+Q2_Escolaridade,Ensino Superior completo.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,4
+Q2_Escolaridade,Ensino Superior completo.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,3
+Q2_Escolaridade,Ensino Superior completo.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1
+Q2_Escolaridade,Ensino Superior cursando.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",4
+Q2_Escolaridade,Ensino Superior cursando.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q2_Escolaridade,Ensino Superior cursando.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q2_Escolaridade,Ensino Superior cursando.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,10
+Q2_Escolaridade,Ensino Superior cursando.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,12
+Q2_Escolaridade,Ensino Superior cursando.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,8
+Q2_Escolaridade,Mestrado.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",1
+Q2_Escolaridade,Mestrado.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q2_Escolaridade,Mestrado.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q2_Escolaridade,Mestrado.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,1
+Q2_Escolaridade,Mestrado.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,0
+Q2_Escolaridade,Mestrado.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q2_Escolaridade,Pós-graduação / Especialização.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q2_Escolaridade,Pós-graduação / Especialização.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,2
+Q2_Escolaridade,Pós-graduação / Especialização.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,1
+Q2_Escolaridade,Pós-graduação / Especialização.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,0
+Q3_Conhecimento,Avançado.,Q7_Frequencia_IA,Diariamente.,10
+Q3_Conhecimento,Avançado.,Q7_Frequencia_IA,Frequentemente.,5
+Q3_Conhecimento,Avançado.,Q7_Frequencia_IA,Raramente.,0
+Q3_Conhecimento,Avançado.,Q7_Frequencia_IA,Às vezes.,0
+Q3_Conhecimento,Básico.,Q7_Frequencia_IA,Diariamente.,1
+Q3_Conhecimento,Básico.,Q7_Frequencia_IA,Frequentemente.,8
+Q3_Conhecimento,Básico.,Q7_Frequencia_IA,Raramente.,0
+Q3_Conhecimento,Básico.,Q7_Frequencia_IA,Às vezes.,1
+Q3_Conhecimento,Iniciante.,Q7_Frequencia_IA,Diariamente.,2
+Q3_Conhecimento,Iniciante.,Q7_Frequencia_IA,Frequentemente.,0
+Q3_Conhecimento,Iniciante.,Q7_Frequencia_IA,Raramente.,0
+Q3_Conhecimento,Iniciante.,Q7_Frequencia_IA,Às vezes.,0
+Q3_Conhecimento,Intermediário.,Q7_Frequencia_IA,Diariamente.,9
+Q3_Conhecimento,Intermediário.,Q7_Frequencia_IA,Frequentemente.,10
+Q3_Conhecimento,Intermediário.,Q7_Frequencia_IA,Raramente.,2
+Q3_Conhecimento,Intermediário.,Q7_Frequencia_IA,Às vezes.,3
+Q3_Conhecimento,Avançado.,Q14_Aceita_Sem_Compreender,Frequentemente.,1
+Q3_Conhecimento,Avançado.,Q14_Aceita_Sem_Compreender,Nunca.,3
+Q3_Conhecimento,Avançado.,Q14_Aceita_Sem_Compreender,Raramente.,9
+Q3_Conhecimento,Avançado.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q3_Conhecimento,Avançado.,Q14_Aceita_Sem_Compreender,Às vezes.,2
+Q3_Conhecimento,Básico.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q3_Conhecimento,Básico.,Q14_Aceita_Sem_Compreender,Nunca.,1
+Q3_Conhecimento,Básico.,Q14_Aceita_Sem_Compreender,Raramente.,4
+Q3_Conhecimento,Básico.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q3_Conhecimento,Básico.,Q14_Aceita_Sem_Compreender,Às vezes.,5
+Q3_Conhecimento,Iniciante.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q3_Conhecimento,Iniciante.,Q14_Aceita_Sem_Compreender,Nunca.,1
+Q3_Conhecimento,Iniciante.,Q14_Aceita_Sem_Compreender,Raramente.,1
+Q3_Conhecimento,Iniciante.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q3_Conhecimento,Iniciante.,Q14_Aceita_Sem_Compreender,Às vezes.,0
+Q3_Conhecimento,Intermediário.,Q14_Aceita_Sem_Compreender,Frequentemente.,4
+Q3_Conhecimento,Intermediário.,Q14_Aceita_Sem_Compreender,Nunca.,6
+Q3_Conhecimento,Intermediário.,Q14_Aceita_Sem_Compreender,Raramente.,7
+Q3_Conhecimento,Intermediário.,Q14_Aceita_Sem_Compreender,Sempre.,1
+Q3_Conhecimento,Intermediário.,Q14_Aceita_Sem_Compreender,Às vezes.,6
+Q3_Conhecimento,Avançado.,Q15_Tenta_Sozinho,Frequentemente.,5
+Q3_Conhecimento,Avançado.,Q15_Tenta_Sozinho,Nunca.,2
+Q3_Conhecimento,Avançado.,Q15_Tenta_Sozinho,Raramente.,6
+Q3_Conhecimento,Avançado.,Q15_Tenta_Sozinho,Sempre.,0
+Q3_Conhecimento,Avançado.,Q15_Tenta_Sozinho,Às vezes.,2
+Q3_Conhecimento,Básico.,Q15_Tenta_Sozinho,Frequentemente.,4
+Q3_Conhecimento,Básico.,Q15_Tenta_Sozinho,Nunca.,1
+Q3_Conhecimento,Básico.,Q15_Tenta_Sozinho,Raramente.,1
+Q3_Conhecimento,Básico.,Q15_Tenta_Sozinho,Sempre.,1
+Q3_Conhecimento,Básico.,Q15_Tenta_Sozinho,Às vezes.,3
+Q3_Conhecimento,Iniciante.,Q15_Tenta_Sozinho,Frequentemente.,1
+Q3_Conhecimento,Iniciante.,Q15_Tenta_Sozinho,Nunca.,1
+Q3_Conhecimento,Iniciante.,Q15_Tenta_Sozinho,Raramente.,0
+Q3_Conhecimento,Iniciante.,Q15_Tenta_Sozinho,Sempre.,0
+Q3_Conhecimento,Iniciante.,Q15_Tenta_Sozinho,Às vezes.,0
+Q3_Conhecimento,Intermediário.,Q15_Tenta_Sozinho,Frequentemente.,10
+Q3_Conhecimento,Intermediário.,Q15_Tenta_Sozinho,Nunca.,1
+Q3_Conhecimento,Intermediário.,Q15_Tenta_Sozinho,Raramente.,4
+Q3_Conhecimento,Intermediário.,Q15_Tenta_Sozinho,Sempre.,2
+Q3_Conhecimento,Intermediário.,Q15_Tenta_Sozinho,Às vezes.,7
+Q3_Conhecimento,Avançado.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",1
+Q3_Conhecimento,Avançado.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,1
+Q3_Conhecimento,Avançado.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",1
+Q3_Conhecimento,Avançado.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,4
+Q3_Conhecimento,Avançado.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,5
+Q3_Conhecimento,Avançado.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,3
+Q3_Conhecimento,Básico.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",2
+Q3_Conhecimento,Básico.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q3_Conhecimento,Básico.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q3_Conhecimento,Básico.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,5
+Q3_Conhecimento,Básico.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,2
+Q3_Conhecimento,Básico.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1
+Q3_Conhecimento,Iniciante.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",0
+Q3_Conhecimento,Iniciante.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q3_Conhecimento,Iniciante.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q3_Conhecimento,Iniciante.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,1
+Q3_Conhecimento,Iniciante.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,0
+Q3_Conhecimento,Iniciante.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1
+Q3_Conhecimento,Intermediário.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",3
+Q3_Conhecimento,Intermediário.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q3_Conhecimento,Intermediário.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q3_Conhecimento,Intermediário.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,7
+Q3_Conhecimento,Intermediário.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,9
+Q3_Conhecimento,Intermediário.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,5
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q7_Frequencia_IA,Diariamente.,0
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q7_Frequencia_IA,Frequentemente.,3
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q7_Frequencia_IA,Raramente.,1
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q7_Frequencia_IA,Às vezes.,0
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q7_Frequencia_IA,Diariamente.,6
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q7_Frequencia_IA,Frequentemente.,11
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q7_Frequencia_IA,Raramente.,1
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q7_Frequencia_IA,Às vezes.,3
+Q4_Frequencia_Codigo,Diariamente.,Q7_Frequencia_IA,Diariamente.,13
+Q4_Frequencia_Codigo,Diariamente.,Q7_Frequencia_IA,Frequentemente.,5
+Q4_Frequencia_Codigo,Diariamente.,Q7_Frequencia_IA,Raramente.,0
+Q4_Frequencia_Codigo,Diariamente.,Q7_Frequencia_IA,Às vezes.,0
+Q4_Frequencia_Codigo,Nunca.,Q7_Frequencia_IA,Diariamente.,1
+Q4_Frequencia_Codigo,Nunca.,Q7_Frequencia_IA,Frequentemente.,0
+Q4_Frequencia_Codigo,Nunca.,Q7_Frequencia_IA,Raramente.,0
+Q4_Frequencia_Codigo,Nunca.,Q7_Frequencia_IA,Às vezes.,0
+Q4_Frequencia_Codigo,Raramente.,Q7_Frequencia_IA,Diariamente.,2
+Q4_Frequencia_Codigo,Raramente.,Q7_Frequencia_IA,Frequentemente.,4
+Q4_Frequencia_Codigo,Raramente.,Q7_Frequencia_IA,Raramente.,0
+Q4_Frequencia_Codigo,Raramente.,Q7_Frequencia_IA,Às vezes.,1
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q14_Aceita_Sem_Compreender,Nunca.,2
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q14_Aceita_Sem_Compreender,Raramente.,1
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q14_Aceita_Sem_Compreender,Às vezes.,1
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q14_Aceita_Sem_Compreender,Frequentemente.,2
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q14_Aceita_Sem_Compreender,Nunca.,5
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q14_Aceita_Sem_Compreender,Raramente.,10
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q14_Aceita_Sem_Compreender,Às vezes.,4
+Q4_Frequencia_Codigo,Diariamente.,Q14_Aceita_Sem_Compreender,Frequentemente.,2
+Q4_Frequencia_Codigo,Diariamente.,Q14_Aceita_Sem_Compreender,Nunca.,3
+Q4_Frequencia_Codigo,Diariamente.,Q14_Aceita_Sem_Compreender,Raramente.,9
+Q4_Frequencia_Codigo,Diariamente.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q4_Frequencia_Codigo,Diariamente.,Q14_Aceita_Sem_Compreender,Às vezes.,4
+Q4_Frequencia_Codigo,Nunca.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q4_Frequencia_Codigo,Nunca.,Q14_Aceita_Sem_Compreender,Nunca.,1
+Q4_Frequencia_Codigo,Nunca.,Q14_Aceita_Sem_Compreender,Raramente.,0
+Q4_Frequencia_Codigo,Nunca.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q4_Frequencia_Codigo,Nunca.,Q14_Aceita_Sem_Compreender,Às vezes.,0
+Q4_Frequencia_Codigo,Raramente.,Q14_Aceita_Sem_Compreender,Frequentemente.,1
+Q4_Frequencia_Codigo,Raramente.,Q14_Aceita_Sem_Compreender,Nunca.,0
+Q4_Frequencia_Codigo,Raramente.,Q14_Aceita_Sem_Compreender,Raramente.,1
+Q4_Frequencia_Codigo,Raramente.,Q14_Aceita_Sem_Compreender,Sempre.,1
+Q4_Frequencia_Codigo,Raramente.,Q14_Aceita_Sem_Compreender,Às vezes.,4
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q15_Tenta_Sozinho,Frequentemente.,3
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q15_Tenta_Sozinho,Nunca.,0
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q15_Tenta_Sozinho,Raramente.,1
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q15_Tenta_Sozinho,Sempre.,0
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q15_Tenta_Sozinho,Às vezes.,0
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q15_Tenta_Sozinho,Frequentemente.,11
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q15_Tenta_Sozinho,Nunca.,2
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q15_Tenta_Sozinho,Raramente.,4
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q15_Tenta_Sozinho,Sempre.,1
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q15_Tenta_Sozinho,Às vezes.,3
+Q4_Frequencia_Codigo,Diariamente.,Q15_Tenta_Sozinho,Frequentemente.,4
+Q4_Frequencia_Codigo,Diariamente.,Q15_Tenta_Sozinho,Nunca.,2
+Q4_Frequencia_Codigo,Diariamente.,Q15_Tenta_Sozinho,Raramente.,5
+Q4_Frequencia_Codigo,Diariamente.,Q15_Tenta_Sozinho,Sempre.,2
+Q4_Frequencia_Codigo,Diariamente.,Q15_Tenta_Sozinho,Às vezes.,5
+Q4_Frequencia_Codigo,Nunca.,Q15_Tenta_Sozinho,Frequentemente.,0
+Q4_Frequencia_Codigo,Nunca.,Q15_Tenta_Sozinho,Nunca.,1
+Q4_Frequencia_Codigo,Nunca.,Q15_Tenta_Sozinho,Raramente.,0
+Q4_Frequencia_Codigo,Nunca.,Q15_Tenta_Sozinho,Sempre.,0
+Q4_Frequencia_Codigo,Nunca.,Q15_Tenta_Sozinho,Às vezes.,0
+Q4_Frequencia_Codigo,Raramente.,Q15_Tenta_Sozinho,Frequentemente.,2
+Q4_Frequencia_Codigo,Raramente.,Q15_Tenta_Sozinho,Nunca.,0
+Q4_Frequencia_Codigo,Raramente.,Q15_Tenta_Sozinho,Raramente.,1
+Q4_Frequencia_Codigo,Raramente.,Q15_Tenta_Sozinho,Sempre.,0
+Q4_Frequencia_Codigo,Raramente.,Q15_Tenta_Sozinho,Às vezes.,4
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",1
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,1
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,1
+Q4_Frequencia_Codigo,Algumas vezes por mês.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",2
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,7
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,8
+Q4_Frequencia_Codigo,Algumas vezes por semana.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,4
+Q4_Frequencia_Codigo,Diariamente.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",1
+Q4_Frequencia_Codigo,Diariamente.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,1
+Q4_Frequencia_Codigo,Diariamente.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",1
+Q4_Frequencia_Codigo,Diariamente.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,7
+Q4_Frequencia_Codigo,Diariamente.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,4
+Q4_Frequencia_Codigo,Diariamente.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,4
+Q4_Frequencia_Codigo,Nunca.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",0
+Q4_Frequencia_Codigo,Nunca.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q4_Frequencia_Codigo,Nunca.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q4_Frequencia_Codigo,Nunca.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,1
+Q4_Frequencia_Codigo,Nunca.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,0
+Q4_Frequencia_Codigo,Nunca.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,0
+Q4_Frequencia_Codigo,Raramente.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",2
+Q4_Frequencia_Codigo,Raramente.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q4_Frequencia_Codigo,Raramente.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q4_Frequencia_Codigo,Raramente.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,1
+Q4_Frequencia_Codigo,Raramente.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,3
+Q4_Frequencia_Codigo,Raramente.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q7_Frequencia_IA,Diariamente.,7
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q7_Frequencia_IA,Frequentemente.,13
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q7_Frequencia_IA,Raramente.,1
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q7_Frequencia_IA,Às vezes.,3
+Q5_Tempo_Programacao,Mais de 4 anos.,Q7_Frequencia_IA,Diariamente.,12
+Q5_Tempo_Programacao,Mais de 4 anos.,Q7_Frequencia_IA,Frequentemente.,7
+Q5_Tempo_Programacao,Mais de 4 anos.,Q7_Frequencia_IA,Raramente.,0
+Q5_Tempo_Programacao,Mais de 4 anos.,Q7_Frequencia_IA,Às vezes.,1
+Q5_Tempo_Programacao,Menos de 1 ano.,Q7_Frequencia_IA,Diariamente.,2
+Q5_Tempo_Programacao,Menos de 1 ano.,Q7_Frequencia_IA,Frequentemente.,3
+Q5_Tempo_Programacao,Menos de 1 ano.,Q7_Frequencia_IA,Raramente.,1
+Q5_Tempo_Programacao,Menos de 1 ano.,Q7_Frequencia_IA,Às vezes.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q7_Frequencia_IA,Diariamente.,1
+Q5_Tempo_Programacao,Não tenho experiência.,Q7_Frequencia_IA,Frequentemente.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q7_Frequencia_IA,Raramente.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q7_Frequencia_IA,Às vezes.,0
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q14_Aceita_Sem_Compreender,Frequentemente.,2
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q14_Aceita_Sem_Compreender,Nunca.,6
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q14_Aceita_Sem_Compreender,Raramente.,8
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q14_Aceita_Sem_Compreender,Às vezes.,8
+Q5_Tempo_Programacao,Mais de 4 anos.,Q14_Aceita_Sem_Compreender,Frequentemente.,3
+Q5_Tempo_Programacao,Mais de 4 anos.,Q14_Aceita_Sem_Compreender,Nunca.,3
+Q5_Tempo_Programacao,Mais de 4 anos.,Q14_Aceita_Sem_Compreender,Raramente.,11
+Q5_Tempo_Programacao,Mais de 4 anos.,Q14_Aceita_Sem_Compreender,Sempre.,1
+Q5_Tempo_Programacao,Mais de 4 anos.,Q14_Aceita_Sem_Compreender,Às vezes.,2
+Q5_Tempo_Programacao,Menos de 1 ano.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q5_Tempo_Programacao,Menos de 1 ano.,Q14_Aceita_Sem_Compreender,Nunca.,2
+Q5_Tempo_Programacao,Menos de 1 ano.,Q14_Aceita_Sem_Compreender,Raramente.,1
+Q5_Tempo_Programacao,Menos de 1 ano.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q5_Tempo_Programacao,Menos de 1 ano.,Q14_Aceita_Sem_Compreender,Às vezes.,3
+Q5_Tempo_Programacao,Não tenho experiência.,Q14_Aceita_Sem_Compreender,Frequentemente.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q14_Aceita_Sem_Compreender,Nunca.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q14_Aceita_Sem_Compreender,Raramente.,1
+Q5_Tempo_Programacao,Não tenho experiência.,Q14_Aceita_Sem_Compreender,Sempre.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q14_Aceita_Sem_Compreender,Às vezes.,0
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q15_Tenta_Sozinho,Frequentemente.,12
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q15_Tenta_Sozinho,Nunca.,1
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q15_Tenta_Sozinho,Raramente.,3
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q15_Tenta_Sozinho,Sempre.,1
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q15_Tenta_Sozinho,Às vezes.,7
+Q5_Tempo_Programacao,Mais de 4 anos.,Q15_Tenta_Sozinho,Frequentemente.,5
+Q5_Tempo_Programacao,Mais de 4 anos.,Q15_Tenta_Sozinho,Nunca.,3
+Q5_Tempo_Programacao,Mais de 4 anos.,Q15_Tenta_Sozinho,Raramente.,8
+Q5_Tempo_Programacao,Mais de 4 anos.,Q15_Tenta_Sozinho,Sempre.,1
+Q5_Tempo_Programacao,Mais de 4 anos.,Q15_Tenta_Sozinho,Às vezes.,3
+Q5_Tempo_Programacao,Menos de 1 ano.,Q15_Tenta_Sozinho,Frequentemente.,2
+Q5_Tempo_Programacao,Menos de 1 ano.,Q15_Tenta_Sozinho,Nunca.,1
+Q5_Tempo_Programacao,Menos de 1 ano.,Q15_Tenta_Sozinho,Raramente.,0
+Q5_Tempo_Programacao,Menos de 1 ano.,Q15_Tenta_Sozinho,Sempre.,1
+Q5_Tempo_Programacao,Menos de 1 ano.,Q15_Tenta_Sozinho,Às vezes.,2
+Q5_Tempo_Programacao,Não tenho experiência.,Q15_Tenta_Sozinho,Frequentemente.,1
+Q5_Tempo_Programacao,Não tenho experiência.,Q15_Tenta_Sozinho,Nunca.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q15_Tenta_Sozinho,Raramente.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q15_Tenta_Sozinho,Sempre.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q15_Tenta_Sozinho,Às vezes.,0
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",1
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,7
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,10
+Q5_Tempo_Programacao,De 1 a 4 anos.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,6
+Q5_Tempo_Programacao,Mais de 4 anos.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",3
+Q5_Tempo_Programacao,Mais de 4 anos.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,1
+Q5_Tempo_Programacao,Mais de 4 anos.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",1
+Q5_Tempo_Programacao,Mais de 4 anos.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,7
+Q5_Tempo_Programacao,Mais de 4 anos.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,6
+Q5_Tempo_Programacao,Mais de 4 anos.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,2
+Q5_Tempo_Programacao,Menos de 1 ano.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",2
+Q5_Tempo_Programacao,Menos de 1 ano.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q5_Tempo_Programacao,Menos de 1 ano.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q5_Tempo_Programacao,Menos de 1 ano.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,3
+Q5_Tempo_Programacao,Menos de 1 ano.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,0
+Q5_Tempo_Programacao,Menos de 1 ano.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1
+Q5_Tempo_Programacao,Não tenho experiência.,Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",0
+Q5_Tempo_Programacao,Não tenho experiência.,Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",0
+Q5_Tempo_Programacao,Não tenho experiência.,Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,0
+Q5_Tempo_Programacao,Não tenho experiência.,Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,1

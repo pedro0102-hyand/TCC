@@ -1,0 +1,38 @@
+﻿variavel,categoria,n,percentual,respostas_validas
+Q2_Escolaridade,Ensino Superior cursando.,34,66.67,51
+Q2_Escolaridade,Ensino Superior completo.,10,19.61,51
+Q2_Escolaridade,Pós-graduação / Especialização.,4,7.84,51
+Q2_Escolaridade,Mestrado.,3,5.88,51
+Q3_Conhecimento,Intermediário.,24,47.06,51
+Q3_Conhecimento,Avançado.,15,29.41,51
+Q3_Conhecimento,Básico.,10,19.61,51
+Q3_Conhecimento,Iniciante.,2,3.92,51
+Q4_Frequencia_Codigo,Algumas vezes por semana.,21,41.18,51
+Q4_Frequencia_Codigo,Diariamente.,18,35.29,51
+Q4_Frequencia_Codigo,Raramente.,7,13.73,51
+Q4_Frequencia_Codigo,Algumas vezes por mês.,4,7.84,51
+Q4_Frequencia_Codigo,Nunca.,1,1.96,51
+Q5_Tempo_Programacao,De 1 a 4 anos.,24,47.06,51
+Q5_Tempo_Programacao,Mais de 4 anos.,20,39.22,51
+Q5_Tempo_Programacao,Menos de 1 ano.,6,11.76,51
+Q5_Tempo_Programacao,Não tenho experiência.,1,1.96,51
+Q7_Frequencia_IA,Frequentemente.,23,45.1,51
+Q7_Frequencia_IA,Diariamente.,22,43.14,51
+Q7_Frequencia_IA,Às vezes.,4,7.84,51
+Q7_Frequencia_IA,Raramente.,2,3.92,51
+Q14_Aceita_Sem_Compreender,Raramente.,21,41.18,51
+Q14_Aceita_Sem_Compreender,Às vezes.,13,25.49,51
+Q14_Aceita_Sem_Compreender,Nunca.,11,21.57,51
+Q14_Aceita_Sem_Compreender,Frequentemente.,5,9.8,51
+Q14_Aceita_Sem_Compreender,Sempre.,1,1.96,51
+Q15_Tenta_Sozinho,Frequentemente.,20,39.22,51
+Q15_Tenta_Sozinho,Às vezes.,12,23.53,51
+Q15_Tenta_Sozinho,Raramente.,11,21.57,51
+Q15_Tenta_Sozinho,Nunca.,5,9.8,51
+Q15_Tenta_Sozinho,Sempre.,3,5.88,51
+Q25_Padrao_Interacao,Peço à IA uma solução e depois procuro compreender o código antes de utilizá-lo.,17,33.33,51
+Q25_Padrao_Interacao,Peço à IA uma solução e faço perguntas para entender como e por que ela funciona.,16,31.37,51
+Q25_Padrao_Interacao,Tento resolver sozinho e uso a IA para tirar dúvidas e esclarecer conceitos.,10,19.61,51
+Q25_Padrao_Interacao,"Começo tentando resolver sozinho, mas acabo delegando a solução para a IA.",6,11.76,51
+Q25_Padrao_Interacao,"Eu entro no modo planejamento, planejo detalhadamente o que vamos implementar, qual arquitetura, quais pacotes, quais anotações. Depois mando ela fazer tudo. Ao final reviso detalhadamente.",1,1.96,51
+Q25_Padrao_Interacao,Estruturo a regra de negócio e repasso para a IA gerar o código dentro do padrão do sistema,1,1.96,51
