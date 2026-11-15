@@ -1,6 +1,7 @@
 from pathlib import Path
 import re
 import sys
+import textwrap
 import unicodedata
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -138,33 +139,39 @@ def salvar_grafico_unico(tabela, titulo, nome_arquivo):
         return
 
     tabela_plot = tabela.sort_values("Frequência", ascending=True)
+    categorias = tabela_plot["Categoria"].astype(str).map(
+        lambda texto: textwrap.fill(texto, width=28)
+    )
 
     altura = max(4.5, len(tabela_plot) * 0.65)
-    plt.figure(figsize=(9, altura))
+    fig, ax = plt.subplots(figsize=(9, altura))
 
-    barras = plt.barh(
-        tabela_plot["Categoria"].astype(str),
+    barras = ax.barh(
+        categorias,
         tabela_plot["Frequência"]
     )
 
-    plt.xlabel("Quantidade de participantes")
-    plt.title(titulo)
-    plt.grid(axis="x", alpha=0.25)
+    ax.set_xlabel("Quantidade de participantes")
+    ax.set_title(titulo)
+    ax.grid(axis="x", alpha=0.25)
 
     total = int(tabela_plot["Frequência"].sum())
+    maior_valor = int(tabela_plot["Frequência"].max())
+    ax.set_xlim(0, maior_valor * 1.2 + 1)
+
     for barra in barras:
         valor = int(barra.get_width())
         percentual = valor / total * 100 if total else 0
-        plt.text(
+        ax.text(
             valor + 0.15,
             barra.get_y() + barra.get_height() / 2,
             f"{valor} ({percentual:.1f}%)",
             va="center"
         )
 
-    plt.tight_layout()
-    plt.savefig(PASTA_RESULTADOS / nome_arquivo, dpi=300, bbox_inches="tight")
-    plt.close()
+    fig.tight_layout()
+    fig.savefig(PASTA_RESULTADOS / nome_arquivo, dpi=300, bbox_inches="tight")
+    plt.close(fig)
 
 
 def salvar_grafico_multipla(tabela, titulo, nome_arquivo):
@@ -173,31 +180,37 @@ def salvar_grafico_multipla(tabela, titulo, nome_arquivo):
         return
 
     tabela_plot = tabela.sort_values("Participantes", ascending=True)
-    altura = max(5, len(tabela_plot) * 0.48)
+    categorias = tabela_plot["Alternativa"].astype(str).map(
+        lambda texto: textwrap.fill(texto, width=28)
+    )
+    linhas_rotulos = sum(texto.count("\n") + 1 for texto in categorias)
+    altura = max(5, linhas_rotulos * 0.48)
 
-    plt.figure(figsize=(10, altura))
-    barras = plt.barh(
-        tabela_plot["Alternativa"],
+    fig, ax = plt.subplots(figsize=(10, altura))
+    barras = ax.barh(
+        categorias,
         tabela_plot["Participantes"]
     )
 
-    plt.xlabel("Quantidade de participantes")
-    plt.title(titulo)
-    plt.grid(axis="x", alpha=0.25)
+    ax.set_xlabel("Quantidade de participantes")
+    ax.set_title(titulo)
+    ax.grid(axis="x", alpha=0.25)
+    maior_valor = int(tabela_plot["Participantes"].max())
+    ax.set_xlim(0, maior_valor * 1.2 + 1)
 
     for barra, (_, linha) in zip(barras, tabela_plot.iterrows()):
         quantidade = int(linha["Participantes"])
         percentual = linha["Percentual dos participantes (%)"]
-        plt.text(
+        ax.text(
             quantidade + 0.15,
             barra.get_y() + barra.get_height() / 2,
             f"{quantidade} ({percentual:.1f}%)",
             va="center"
         )
 
-    plt.tight_layout()
-    plt.savefig(PASTA_RESULTADOS / nome_arquivo, dpi=300, bbox_inches="tight")
-    plt.close()
+    fig.tight_layout()
+    fig.savefig(PASTA_RESULTADOS / nome_arquivo, dpi=300, bbox_inches="tight")
+    plt.close(fig)
 
 
 # ---------------------------------------------------------------------
