@@ -11,6 +11,7 @@ import unicodedata
 
 ARQUIVO = "dados/data.csv"
 PASTA_SAIDA = "resultados/analise_5_3"
+MIN_GRUPO_PRIVACIDADE = 5
 
 os.makedirs(PASTA_SAIDA, exist_ok=True)
 
@@ -172,6 +173,17 @@ def analisar_cruzamento(coluna_perfil, nome_perfil, arquivo_prefixo):
     print("=" * 70)
 
     base = df.dropna(subset=[coluna_perfil]).copy()
+    tamanhos_grupos = base[coluna_perfil].value_counts()
+    grupos_publicaveis = tamanhos_grupos[
+        tamanhos_grupos >= MIN_GRUPO_PRIVACIDADE
+    ].index
+    base = base[base[coluna_perfil].isin(grupos_publicaveis)]
+
+    if base.empty:
+        raise ValueError(
+            f"Não há grupos com pelo menos {MIN_GRUPO_PRIVACIDADE} "
+            f"participantes para analisar {nome_perfil}."
+        )
 
     resultados = []
 
@@ -227,32 +239,82 @@ def analisar_cruzamento(coluna_perfil, nome_perfil, arquivo_prefixo):
         values="Percentual"
     )
 
-    ax = tabela.plot(
-        kind="bar",
-        figsize=(13, 7),
-        width=0.8
-    )
+    if coluna_perfil == col_q3:
+        estrategias_grafico = [
+            "Consulta outras fontes de estudo",
+            "Tenta resolver sozinho utilizando conhecimentos",
+        ]
+        tabela_grafico = tabela[estrategias_grafico].copy()
+        grupos_ordem = [
+            grupo for grupo in [
+                "Básico.",
+                "Intermediário.",
+                "Avançado.",
+            ]
+            if grupo in tabela_grafico.index
+        ]
+        tabela_grafico = tabela_grafico.reindex(grupos_ordem)
+        tabela_grafico.index = [
+            f"{grupo.removesuffix('.')} "
+            f"(n={int(tamanhos_grupos.loc[grupo])})"
+            for grupo in tabela_grafico.index
+        ]
+        tabela_grafico = tabela_grafico.rename(columns={
+            estrategias_grafico[0]: "Consulta outras fontes",
+            estrategias_grafico[1]: "Tenta resolver com conhecimentos próprios",
+        })
 
-    ax.set_title(
-        f"Estratégias quando a IA não resolve — {nome_perfil}"
-    )
-
-    ax.set_xlabel(nome_perfil)
-
-    ax.set_ylabel(
-        "Participantes que selecionaram a estratégia (%)"
-    )
-
-    ax.set_ylim(0, 100)
-
-    ax.legend(
-        title="Estratégias",
-        bbox_to_anchor=(1.02, 1),
-        loc="upper left"
-    )
-
-    plt.xticks(rotation=25, ha="right")
-    plt.tight_layout()
+        fig, ax = plt.subplots(figsize=(12, 5.5))
+        tabela_grafico.plot(
+            kind="barh",
+            ax=ax,
+            width=0.72,
+            color=["#1f77b4", "#ed7d31"]
+        )
+        ax.invert_yaxis()
+        ax.set_title(
+            "Estratégias da Q18 por nível de conhecimento em programação (Q3)"
+        )
+        ax.set_xlabel("Participantes do grupo (%)")
+        ax.set_ylabel("")
+        ax.set_xlim(0, 100)
+        ax.set_xticks(range(0, 101, 20))
+        ax.set_axisbelow(True)
+        ax.xaxis.grid(alpha=0.2)
+        ax.legend(
+            title="Estratégias",
+            loc="lower left",
+            bbox_to_anchor=(1.02, 0.02),
+            borderaxespad=0
+        )
+        for barras in ax.containers:
+            rotulos = [
+                f"{valor:.2f}".rstrip("0").rstrip(".").replace(".", ",") + "%"
+                for valor in barras.datavalues
+            ]
+            ax.bar_label(barras, labels=rotulos, padding=3, fontsize=9)
+        fig.subplots_adjust(left=0.24, right=0.66, top=0.84, bottom=0.15)
+    else:
+        ax = tabela.plot(
+            kind="bar",
+            figsize=(13, 7),
+            width=0.8
+        )
+        ax.set_title(
+            f"Estratégias quando a IA não resolve — {nome_perfil}"
+        )
+        ax.set_xlabel(nome_perfil)
+        ax.set_ylabel(
+            "Participantes que selecionaram a estratégia (%)"
+        )
+        ax.set_ylim(0, 100)
+        ax.legend(
+            title="Estratégias",
+            bbox_to_anchor=(1.02, 1),
+            loc="upper left"
+        )
+        plt.xticks(rotation=25, ha="right")
+        plt.tight_layout()
 
     caminho_grafico = os.path.join(
         PASTA_SAIDA,

@@ -15,6 +15,8 @@ CAMINHO_CSV = BASE_DIR / "dados" / "data.csv"
 PASTA_SAIDA = BASE_DIR / "resultados" / "analise_5_3"
 PASTA_SAIDA.mkdir(parents=True, exist_ok=True)
 
+MIN_GRUPO_PRIVACIDADE = 5
+
 plt.rcParams["figure.figsize"] = (11, 6)
 plt.rcParams["font.size"] = 10
 plt.rcParams["axes.titlesize"] = 13
@@ -295,10 +297,12 @@ opcoes_q18 = {
     ),
 }
 
-q18_normalizada = dados[col_q18].fillna("").apply(normalizar)
+dados_q18 = df[[col_q3, col_q18]].copy()
+dados_q18[col_q3] = dados_q18[col_q3].astype("string").str.strip()
+q18_normalizada = dados_q18[col_q18].fillna("").apply(normalizar)
 
 # Matriz binária: 1 = participante selecionou a alternativa.
-matriz_q18 = pd.DataFrame(index=dados.index)
+matriz_q18 = pd.DataFrame(index=dados_q18.index)
 
 for nome, alternativa in opcoes_q18.items():
     alternativa_norm = normalizar(alternativa)
@@ -313,7 +317,7 @@ for nome, alternativa in opcoes_q18.items():
 print("\n[3/4] Gerando distribuição geral da Q18...")
 
 frequencias_q18 = matriz_q18.sum().sort_values(ascending=True)
-percentuais_q18 = (frequencias_q18 / len(dados)) * 100
+percentuais_q18 = (frequencias_q18 / len(dados_q18)) * 100
 
 tabela_geral_q18 = pd.DataFrame({
     "Frequência": frequencias_q18,
@@ -366,41 +370,79 @@ print("\n[4/4] Gerando Q18 × Q3...")
 # cada estratégia. Como é múltipla seleção, a soma pode passar
 # de 100% dentro de um mesmo grupo.
 
-dados_q18_q3 = matriz_q18.join(dados[col_q3])
+dados_q18_q3 = matriz_q18.join(dados_q18[col_q3])
+dados_q18_q3 = dados_q18_q3.dropna(subset=[col_q3])
 
 tamanhos_grupos = dados_q18_q3.groupby(col_q3).size()
+grupos_publicaveis = tamanhos_grupos[
+    tamanhos_grupos >= MIN_GRUPO_PRIVACIDADE
+].index
 
 tabela_q18_q3 = (
     dados_q18_q3.groupby(col_q3)[list(opcoes_q18.keys())].mean()
     * 100
 )
 
-tabela_q18_q3 = tabela_q18_q3.reindex(ordem_q3)
+tabela_q18_q3 = tabela_q18_q3.reindex(
+    [grupo for grupo in ordem_q3 if grupo in grupos_publicaveis]
+)
 
 tabela_q18_q3.to_csv(
     PASTA_SAIDA / "q18_por_conhecimento_q3_percentuais.csv",
     encoding="utf-8-sig"
 )
 
-ax = tabela_q18_q3.plot(
-    kind="bar",
-    figsize=(12, 7),
-    colormap="tab10",
-    width=0.8
+if tabela_q18_q3.empty:
+    raise ValueError(
+        "Não há grupos com pelo menos "
+        f"{MIN_GRUPO_PRIVACIDADE} participantes para gerar o gráfico Q18 × Q3."
+    )
+
+estrategias_grafico_q18 = {
+    "Consulta outras fontes": "Consulta outras fontes",
+    "Tenta resolver sozinho": "Tenta resolver com conhecimentos próprios",
+}
+tabela_grafico_q18_q3 = tabela_q18_q3[
+    list(estrategias_grafico_q18)
+].copy()
+tabela_grafico_q18_q3.index = [
+    f"{grupo.removesuffix('.')} (n={int(tamanhos_grupos.loc[grupo])})"
+    for grupo in tabela_grafico_q18_q3.index
+]
+tabela_grafico_q18_q3 = tabela_grafico_q18_q3.rename(
+    columns=estrategias_grafico_q18
 )
 
-ax.set_title(
-    "Estratégias diante das limitações da IA por nível de conhecimento"
+fig, ax = plt.subplots(figsize=(12, 5.5))
+tabela_grafico_q18_q3.plot(
+    kind="barh",
+    ax=ax,
+    width=0.72,
+    color=["#1f77b4", "#ed7d31"]
 )
-ax.set_xlabel("Nível de conhecimento em programação")
-ax.set_ylabel("Participantes que selecionaram cada estratégia (%)")
-ax.set_ylim(0, 110)
+ax.invert_yaxis()
+ax.set_title(
+    "Estratégias da Q18 por nível de conhecimento em programação (Q3)"
+)
+ax.set_xlabel("Participantes do grupo (%)")
+ax.set_ylabel("")
+ax.set_xlim(0, 100)
+ax.set_xticks(range(0, 101, 20))
+ax.set_axisbelow(True)
+ax.xaxis.grid(alpha=0.2)
 ax.legend(
     title="Estratégias",
-    bbox_to_anchor=(1.02, 1),
-    loc="upper left"
+    loc="lower left",
+    bbox_to_anchor=(1.02, 0.02),
+    borderaxespad=0
 )
-ax.tick_params(axis="x", rotation=0)
+for barras in ax.containers:
+    rotulos = [
+        f"{valor:.2f}".rstrip("0").rstrip(".").replace(".", ",") + "%"
+        for valor in barras.datavalues
+    ]
+    ax.bar_label(barras, labels=rotulos, padding=3, fontsize=9)
+fig.subplots_adjust(left=0.24, right=0.66, top=0.84, bottom=0.15)
 
 salvar_grafico("q18_por_conhecimento_q3.png")
 
@@ -426,3 +468,7 @@ print(tabela_q18_q3.round(2).to_string())
 print("\nObservação: Q18 é de múltipla seleção.")
 print("Os percentuais são calculados sobre participantes de cada grupo.")
 print("Por isso, a soma das categorias pode ultrapassar 100%.")
+print(
+    "Grupos com menos de "
+    f"{MIN_GRUPO_PRIVACIDADE} foram omitidos por privacidade."
+)
