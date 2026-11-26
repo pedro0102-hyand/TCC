@@ -169,10 +169,10 @@ dados = dados.dropna(subset=[col_q3, col_q5, col_q14, col_q25])
 
 # Ordem desejada para as categorias de perfil
 ordem_q3 = ordenar_categorias_presentes(dados[col_q3], [
-    "Iniciante",
-    "Básico",
+    "Avançado",
     "Intermediário",
-    "Avançado"
+    "Básico",
+    "Iniciante"
 ])
 
 ordem_q5 = ordenar_categorias_presentes(dados[col_q5], [
