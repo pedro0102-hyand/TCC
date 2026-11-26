@@ -97,6 +97,7 @@ def gerar_grafico(caminho_csv=ARQUIVO_CSV, caminho_saida=ARQUIVO_SAIDA):
     ax.set_yticklabels(rotulos_q4, fontsize=9.5)
     ax.invert_yaxis()
     ax.set_xlim(0, 100)
+    ax.set_ylabel("Frequência de desenvolvimento", fontsize=10)
     ax.set_xlabel("Proporção de participantes (%)", fontsize=10)
     ax.set_title(
         "Frequência de uso de IAG segundo a frequência de desenvolvimento",
