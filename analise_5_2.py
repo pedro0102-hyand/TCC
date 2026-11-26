@@ -133,12 +133,29 @@ def tabela_frequencia_multipla(serie, alternativas_conhecidas):
     return tabela, n_validos
 
 
-def salvar_grafico_unico(tabela, titulo, nome_arquivo):
+def salvar_grafico_unico(tabela, titulo, nome_arquivo, ordem_categorias=None):
     """Gera gráfico de barras para questão de resposta única."""
     if tabela.empty:
         return
 
-    tabela_plot = tabela.sort_values("Frequência", ascending=True)
+    if ordem_categorias is None:
+        tabela_plot = tabela.sort_values("Frequência", ascending=True)
+    else:
+        categorias_presentes = tabela["Categoria"].tolist()
+        ordem_plot = [
+            categoria for categoria in reversed(ordem_categorias)
+            if categoria in categorias_presentes
+        ]
+        categorias_nao_ordenadas = (
+            tabela.loc[~tabela["Categoria"].isin(ordem_categorias)]
+            .sort_values("Frequência", ascending=True)["Categoria"]
+            .tolist()
+        )
+        tabela_plot = (
+            tabela.set_index("Categoria")
+            .reindex(categorias_nao_ordenadas + ordem_plot)
+            .reset_index()
+        )
     categorias = tabela_plot["Categoria"].astype(str).map(
         lambda texto: textwrap.fill(texto, width=28)
     )
@@ -265,7 +282,13 @@ tabela_q7_export.to_csv(
 salvar_grafico_unico(
     tabela_q7_export,
     "Q7 — Frequência de utilização de ferramentas de IAG",
-    "q7_frequencia_utilizacao.png"
+    "q7_frequencia_utilizacao.png",
+    ordem_categorias=[
+        "Diariamente.",
+        "Frequentemente.",
+        "Às vezes.",
+        "Raramente.",
+    ]
 )
 
 

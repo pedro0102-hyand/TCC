@@ -6,17 +6,17 @@ Q2,Escolaridade,Ensino Superior cursando.,34,66.67
 Q2,Escolaridade,Ensino Superior completo.,10,19.61
 Q2,Escolaridade,Pós-graduação / Especialização.,4,7.84
 Q2,Escolaridade,Mestrado.,3,5.88
-Q3,Conhecimento em programação,Intermediário.,24,47.06
 Q3,Conhecimento em programação,Avançado.,15,29.41
+Q3,Conhecimento em programação,Intermediário.,24,47.06
 Q3,Conhecimento em programação,Básico.,10,19.61
 Q3,Conhecimento em programação,Iniciante.,2,3.92
-Q4,Frequência de desenvolvimento,Algumas vezes por semana.,21,41.18
 Q4,Frequência de desenvolvimento,Diariamente.,18,35.29
-Q4,Frequência de desenvolvimento,Raramente.,7,13.73
+Q4,Frequência de desenvolvimento,Algumas vezes por semana.,21,41.18
 Q4,Frequência de desenvolvimento,Algumas vezes por mês.,4,7.84
+Q4,Frequência de desenvolvimento,Raramente.,7,13.73
 Q4,Frequência de desenvolvimento,Nunca.,1,1.96
-Q5,Tempo de estudo e/ou trabalho com programação,De 1 a 4 anos.,24,47.06
 Q5,Tempo de estudo e/ou trabalho com programação,Mais de 4 anos.,20,39.22
+Q5,Tempo de estudo e/ou trabalho com programação,De 1 a 4 anos.,24,47.06
 Q5,Tempo de estudo e/ou trabalho com programação,Menos de 1 ano.,6,11.76
 Q5,Tempo de estudo e/ou trabalho com programação,Não tenho experiência.,1,1.96
 Q6,Área ou função principal,Desenvolvimento Web.,33,64.71

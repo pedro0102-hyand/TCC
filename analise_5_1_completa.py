@@ -115,6 +115,37 @@ print("-" * 72)
 for codigo in ["Q1", "Q2", "Q3", "Q4", "Q5"]:
     coluna = COLUNAS[codigo]
     tabela, n_validos = tabela_frequencia(df[coluna])
+    if codigo == "Q3":
+        ordem_q3 = [
+            "Avançado.",
+            "Intermediário.",
+            "Básico.",
+            "Iniciante.",
+        ]
+        tabela = tabela.reindex(
+            [categoria for categoria in ordem_q3 if categoria in tabela.index]
+        ).dropna(how="all")
+    if codigo == "Q4":
+        ordem_q4 = [
+            "Diariamente.",
+            "Algumas vezes por semana.",
+            "Algumas vezes por mês.",
+            "Raramente.",
+            "Nunca.",
+        ]
+        tabela = tabela.reindex(
+            [categoria for categoria in ordem_q4 if categoria in tabela.index]
+        ).dropna(how="all")
+    if codigo == "Q5":
+        ordem_q5 = [
+            "Mais de 4 anos.",
+            "De 1 a 4 anos.",
+            "Menos de 1 ano.",
+            "Não tenho experiência.",
+        ]
+        tabela = tabela.reindex(
+            [categoria for categoria in ordem_q5 if categoria in tabela.index]
+        ).dropna(how="all")
     tabelas[codigo] = tabela
     print(f"\n{codigo} — {NOMES[codigo]}")
     print(f"Respostas válidas: {n_validos}")
@@ -180,6 +211,18 @@ for coluna in [COLUNAS["Q3"], COLUNAS["Q5"]]:
 dados_cruzamento = dados_cruzamento.dropna()
 frequencias_cruzadas = pd.crosstab(dados_cruzamento[COLUNAS["Q5"]], dados_cruzamento[COLUNAS["Q3"]])
 percentuais_cruzados = (pd.crosstab(dados_cruzamento[COLUNAS["Q5"]], dados_cruzamento[COLUNAS["Q3"]], normalize="index") * 100).round(2)
+ordem_q5 = [
+    "Mais de 4 anos.",
+    "De 1 a 4 anos.",
+    "Menos de 1 ano.",
+    "Não tenho experiência.",
+]
+ordem_q5_presente = [
+    categoria for categoria in ordem_q5
+    if categoria in frequencias_cruzadas.index
+]
+frequencias_cruzadas = frequencias_cruzadas.reindex(ordem_q5_presente)
+percentuais_cruzados = percentuais_cruzados.reindex(ordem_q5_presente)
 
 print(f"Participantes considerados: {len(dados_cruzamento)}")
 print("\nFrequências absolutas:")
