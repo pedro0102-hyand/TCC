@@ -102,7 +102,9 @@ def tabela_percentual_linha(dados, coluna_linha, coluna_coluna):
     return tabela
 
 
-def grafico_barras_empilhadas(tabela, titulo, xlabel, nome_arquivo):
+def grafico_barras_empilhadas(
+    tabela, titulo, xlabel, nome_arquivo, ordem_legenda=None
+):
     ax = tabela.plot(
         kind="bar",
         stacked=True,
@@ -113,7 +115,27 @@ def grafico_barras_empilhadas(tabela, titulo, xlabel, nome_arquivo):
     ax.set_title(titulo)
     ax.set_xlabel("")
     ax.set_ylabel(xlabel)
+    handles, labels = ax.get_legend_handles_labels()
+    if ordem_legenda is not None:
+        ordem_normalizada = [normalizar(item) for item in ordem_legenda]
+        indices = [
+            next(
+                (i for i, label in enumerate(labels)
+                 if normalizar(label) == categoria),
+                None
+            )
+            for categoria in ordem_normalizada
+        ]
+        indices = [i for i in indices if i is not None]
+        indices.extend(
+            i for i, label in enumerate(labels)
+            if normalizar(label) not in ordem_normalizada
+        )
+        handles = [handles[i] for i in indices]
+        labels = [labels[i] for i in indices]
     ax.legend(
+        handles,
+        labels,
         title="Respostas",
         bbox_to_anchor=(1.02, 1),
         loc="upper left"
@@ -209,7 +231,8 @@ grafico_barras_empilhadas(
     tabela_q3_q14,
     "Nível de conhecimento × frequência de aceitação de soluções sem compreensão",
     "Percentual dentro de cada nível de conhecimento (%)",
-    "q3_q14_conhecimento_aceitacao.png"
+    "q3_q14_conhecimento_aceitacao.png",
+    ordem_legenda=["Sempre", "Frequentemente", "Às vezes", "Raramente", "Nunca"]
 )
 
 
